@@ -1,0 +1,10 @@
+table {
+    width: 150px;
+    text-align: center;
+}
+.left {
+    text-align: left;
+}
+fieldset {
+    width: 300px;
+}

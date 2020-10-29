@@ -1,0 +1,69 @@
+.img_cake {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.recipe {
+    margin: 0 auto;
+    position: relative;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+.titlerecipe {
+    background-color: white;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+}
+
+.popup {
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 130px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF4949;
+}
+
+.heartcontainer {
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.hearticon {
+    margin: 0 auto;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background-image: url("img/emptyicon.png");
+    background-repeat: no-repeat;
+}
+
+.hearticon:hover{
+    background-image: url("img/fullicon.png");
+}
+
+.titlerecipe h2 {
+    vertical-align: middle;
+}

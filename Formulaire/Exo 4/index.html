@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exo 4</title>
+</head>
+<body>
+    <form action="">
+    <fieldset>
+        <legend>Authentification</legend>
+
+        <label for="login">Login : </label>
+        <input type="email" id="login" pattern="[a-z0-9]+@needemand.com" required>
+
+        <label for="password">Mot de passe : </label>
+        <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,8}" required>
+
+        <button type="submit">Envoyer</button>
+        <button type="reset">Effacer</button>
+    </fieldset>
+</form>
+</body>
+</html>

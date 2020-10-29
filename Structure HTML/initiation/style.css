@@ -1,0 +1,23 @@
+body {
+    background-image: url(https://wallpaperaccess.com/full/2437.jpg);
+    border-left: 5px;
+    padding-left: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1, p, a, b, i {
+    color: white;
+    
+}
+
+mark {
+    color: white;
+    background-color: red;
+}
+
+#imagehtml {
+    height: 100px;
+    width: 100px;
+}
+

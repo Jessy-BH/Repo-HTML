@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exo 1</title>
+</head>
+<body>
+    <form action="" name="etatcivil" method="GET">
+        <fieldset>
+            <legend>État civil</legend>
+            <label for="sexe">Votre sexe :</label> <p></p>
+            <input type="radio" id="sexe"> Masculin 
+            <input type="radio" > Féminin 
+            <input type="radio" > Arbre/Hélicoptère etc <p></p>
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" placeholder="Prénom"> <p></p>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" placeholder="Nom"> <p></p>
+            <label for="pseudo">Pseudo</label>
+            <input type="text" id="pseudo" placeholder="Pseudo"> <p></p>
+            <label for="naissance">Date de naissance</label>
+            <input type="date" id="naissance"> <p></p>
+            <label for="email">Adresse mail</label>
+            <input type="email" id="email" placeholder="Votre email"> <p></p>
+            <label for="mdp">Mot de passe</label>
+            <input type="password" id="mdp" placeholder="Mot de passe"> <p></p>
+            <textarea name="commentaire" id="" cols="30" rows="10" placeholder="Commentaires"></textarea> <p></p> 
+            <label for="pays">Votre Pays</label>
+            <select>
+                <option name="france" value="1">France</option>
+                <option name="espagne" value="2">Espagne</option>
+            </select>
+            <p></p>
+            <input type="submit" value="Envoyer">
+            
+        </fieldset>
+        </form>
+</body>
+</html>

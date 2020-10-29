@@ -1,0 +1,43 @@
+header #titre_principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+nav {
+    justify-content: flex-end;
+}
+
+ul {
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+    list-style: none;
+    width: 50%;
+}
+aside {
+    background-color: green;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: space-between;   
+}
+
+section {
+    display: flex;
+    margin-right: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+#banniere_image {
+    
+}

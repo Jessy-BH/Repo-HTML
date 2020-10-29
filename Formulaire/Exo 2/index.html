@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exo 2</title>
+</head>
+<body>
+    <form action="" name="client" method="GET">
+        <fieldset>
+            <legend>Client</legend>
+            <label for="name">Nom et prénom </label>
+            <input type="text" id="name" placeholder="Nom et prénom"> <br><br>
+            <label for="adresse">Adresse</label>
+            <input type="text" id="adresse"> <br><br>
+            <label for="postal">Code postal</label>
+            <input type="text" id="postal" pattern="[0-9]{5}"> <br><br>
+            <label for="pays">Votre Pays</label>
+            <input type="text" id="pays" value="France" readonly>
+        </fieldset>
+        <fieldset>
+            <legend>Commande</legend>
+            <label for="modele">Modèle</label>
+            <input type="text" id="modele" value="Road 66" readonly> <br><br>
+            <label for="taille">Taille : </label> <br><br>
+            <input type="range" id="taille" min="0" max="3"> <br><br>
+            <table>
+                <tr>
+                    <td class="left">S</td>
+                    <td>M</td>
+                    <td>L</td>
+                    <td>XL</td>
+                </tr>
+            </table>
+            <label for="qte">Quantité</label>
+            <input type="number" name="quantite" id="qte">
+            
+        </fieldset>
+        <input type="submit" value="Commander">
+        <input type="reset" value="Recommencer">
+        </form>
+</body>
+</html>

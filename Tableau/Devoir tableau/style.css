@@ -1,0 +1,23 @@
+table {
+    width: 500px;
+    height: 300px;
+    border: 1px solid lightgrey;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0px 5px;
+    border-top: 1em solid transparent;
+    border-right: 1em solid transparent;
+    border-left: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+}
+td {
+    border: 1px solid lightgrey;
+    
+}
+.yellow {
+    background-color: #ffff99;
+    
+}
+.green {
+    background-color: #ccffcc;
+}
