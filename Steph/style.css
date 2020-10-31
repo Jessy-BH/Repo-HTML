@@ -132,6 +132,10 @@ article p {
     margin-top: 20px;
 }
 
+aside {
+    height: 100vh;
+}
+
 aside .github {
     display: flex;
     flex-direction: column;
@@ -145,7 +149,7 @@ aside h4 {
     font-size: 2rem;
 }
 
-aside p {
+aside p a {
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
@@ -159,4 +163,10 @@ h4 {
 .github img {
     width: 150px;
     height: 150px;
+    margin-bottom: 30px;
 }
+
+aside a {
+    color: #fff;
+}
+
