@@ -1,0 +1,162 @@
+:root {
+    --primary-color: rgba(1, 24, 50, 0.8);
+    --overlay-color: rgba(1, 24, 50, 0.9);
+    --menu-speed: 0.75s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+.hdrclass {
+    background: var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+.hdrclass:before {
+    content: '';
+    background: url('img/formes.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hdrclass .hdrclass2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.hdrclass h1 {
+    font-size: 5rem;
+}
+
+.hdrclass h2 {
+    font-size: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background: #99a8e5;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    transition: opacity 1s ease-in-out;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    background: #afa7d4;
+}
+
+
+/* ---------------------- Main --------------------------- */
+
+.main:before {
+    content: '';
+    background: url('img/formes.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.main {
+    background: var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+.title h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin-bottom: 100px;
+}
+
+section {
+    float: left;
+    width: 60%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+article {
+    margin-bottom: 150px;
+}
+
+article h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+article p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+aside .github {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+aside p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+h4 {
+    margin-bottom: 30px;
+}
+
+.github img {
+    width: 150px;
+    height: 150px;
+}
