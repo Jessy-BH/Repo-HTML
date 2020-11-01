@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px 30px;
+  height: 500px;
+  width: 600px
+}
+
+.c { grid-area: 6 / 2 / 7 / 8; }
+
+.d { grid-area: 2 / 1 / 7 / 2; }
+
+.e { grid-area: 3 / 2 / 6 / 3; }
+
+.f { grid-area: 5 / 3 / 6 / 7; }
+
+.a { grid-area: 1 / 1 / 2 / 7; }
+
+.b { grid-area: 1 / 7 / 6 / 8; }
+
+.g { grid-area: 2 / 6 / 5 / 7; }
+
+.h { grid-area: 2 / 2 / 3 / 6; }
+
+.i { grid-area: 3 / 3 / 5 / 6; }
+
+
+.bleu {
+    background-color: #DAE8FC;
+    border: #7494C3 solid 1px;
+}
+
+.vert {
+    background-color: #D5E8D4;
+    border: #82B366 solid 1px;
+}
+
+.orange {
+    background-color:#FFE6CC;
+    border:#D79C03 solid 1px;
+}
+
+</style>
+
+<body>
+    <div class="grid-container">
+        <div class="c vert"></div>
+        <div class="d vert"></div>
+        <div class="e bleu"></div>
+        <div class="f bleu"></div>
+        <div class="a vert"></div>
+        <div class="b vert"></div>
+        <div class="g bleu"></div>
+        <div class="h bleu"></div>
+        <div class="i orange"></div>
+      </div>
+</body>
+
+</html>
