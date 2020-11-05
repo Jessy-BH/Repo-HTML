@@ -23,9 +23,18 @@
     margin-bottom: 100px;
 }
 
+@media (max-width: 640px){
+    
+    h3 {
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+    }
+}
+
 section {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 article {

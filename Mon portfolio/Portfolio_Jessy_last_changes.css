@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: #1F1F1F;
+    font-family: 'sorren-medium-3', sans-serif;
+    color: white;
+}
+
+
+header {
+    height: 800px;
+    background: center/cover no-repeat url(assets/banner.jpg);
+}
+
+nav {
+    color: white;
+    font-size: 2rem;
+    background-color: #2d2626c4;
+
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+ul {
+
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+/* ---------- Header --------------------*/
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+
+
+
+/* --- Anim nav ---*/
+.line-bottom {
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+}
+
+nav ul li:hover .line-bottom{
+    background-color: white;
+    animation: animate 0.5s linear;
+}
+@keyframes animate {
+    0% {
+    transform:scaleX(0);
+    transform-origin: center;
+    }
+    100%
+    {
+      transform:scaleX(1);
+    transform-origin: center;
+    }
+   
+}
+
+#photoId {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 722px;
+}
+
+header div img {
+    height: 200px;
+    width: 200px;
+    clip-path: ellipse();
+}
+
+#photoId div h2 {
+    font-size: 50px;
+
+}
+
+section>h2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+section>article {
+
+    display: grid;
+    height: 60vh;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 50px;
+ 
+
+}
+
+.image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+img {
+    height: 300px;
+    width: 600px;
+
+}
+
+
+article div:nth-child(2) {
+    position: relative;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 5% 22%;
+}
+
+.projet{
+    position: relative;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5% 22%;
+}
+
+p{
+    text-align: justify;
+    font-size: 20px;
+    
+}
+h2{
+    margin-top: 50px;
+    font-size: 50px;
+    color: white;
+}
+h3 {
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 25px;
+}

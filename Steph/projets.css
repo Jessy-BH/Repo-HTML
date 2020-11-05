@@ -86,3 +86,9 @@ h4 {
     display: grid;
     grid-template-columns: 75% 25%;
 }
+
+@media (max-width: 640px) {
+    .align {
+        display: block;
+    }
+}
