@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 9</title>
+</head>
+
+<body>
+
+    <button onclick="calcul()">Partie 1</button>
+
+    <script type="text/javascript">
+
+        function calcul() {
+
+            var resultat;
+            var confirmation;
+
+            do {
+                var resultat = eval(prompt("Choisir premier chiffre : ") + prompt("Choisir opérateur : ") + prompt("Choisir second chiffre :"));
+
+                if (confirmation = confirm("Voulez-vous vraiment procéder au calcul ?")) {
+                    
+                    alert("Résultat : " + resultat);
+                }
+
+            } while (!confirmation);
+        }
+
+    </script>
+</body>
+
+</html>

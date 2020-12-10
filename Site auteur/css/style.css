@@ -9,6 +9,7 @@ body {
     padding: 0;
     height: 100vh;
     background: url('../img/deskbg.jpg') no-repeat center center/cover fixed;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* -------------------- Header -------------------- */
@@ -45,7 +46,6 @@ header a {
     text-decoration: none;
     color: #ffd700;
     font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .hoveranim {
@@ -120,8 +120,9 @@ h4 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
-    font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
 }
 
 .book-text p {
@@ -144,11 +145,6 @@ h4 {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 640px) {
-    .books {
-        display: block;
-    }
-}
 
 .book {
     display: grid;
@@ -189,6 +185,8 @@ h4 {
     background-color: rgba(0, 0, 0, 0.4);
     font-size: 18px;
 }
+
+
 
 /* ------- Contact ------- */
 
@@ -241,7 +239,7 @@ form {
     font-size: 15px;    
 }
 
-input:focus, textarea:focus, select:focus{
+input:focus, textarea:focus, select:focus, button:focus{
     outline: none;
 }
 
@@ -258,4 +256,48 @@ input:focus, textarea:focus, select:focus{
 
 .space {
     height: 30px;
+}
+
+
+@media (max-width: 800px) {
+    
+    .books {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .part img{
+        width: 300px;
+    }
+
+    .book-text {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .book {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    header a{
+        display: none;
+    }
+
+    header .logo {
+        display: none;
+    }
+
+    header .name img {
+        width: 300px;
+    }
 }

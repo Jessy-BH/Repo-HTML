@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 4</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var f = prompt("Montant facture");
+
+        if (f > 150){
+            f = f - ((f*1)/100);
+            alert("Facture après remise d'1% " + f);
+        }else {
+            alert("Votre facture est de " + f + "€")
+        }
+
+    </script>
+</body>
+
+</html>

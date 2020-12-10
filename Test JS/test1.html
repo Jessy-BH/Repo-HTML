@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 1</title>
+</head>
+
+<body>
+
+    <button onclick="helloworld()">Hello World</button>
+    <button onclick='saisir_nom()'>My name</button>
+
+
+    <script type="text/javascript">
+
+        function helloworld() {
+
+            alert("Hello World");
+        }
+
+        function saisir_nom() {
+
+            var name = prompt("Quel est votre nom ?");
+
+            var conf = confirm("Vous vous appelez vraiment " + name);
+
+            alert("Bonjour " + name);
+
+        }
+    </script>
+</body>
+
+</html>

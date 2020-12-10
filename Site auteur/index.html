@@ -182,34 +182,20 @@
 
             
                 <div class="contactform">
-                    <form method="POST" action="">
+                    <form method="POST" action="contact.php">
 
                         <input type="text" name="nom" placeholder="Nom" class="info"> <br><br>
-                        <input type="text" name="nom" placeholder="Prénom" class="info"> <br><br>
+                        <input type="text" name="prenom" placeholder="Prénom" class="info"> <br><br>
                         <input type="email" name="mail" placeholder="Adresse email" class="info"> <br><br>
                         <textarea name="message" placeholder="Message" class="msg"></textarea><br><br>
-                        <input type="submit" value="Envoyer" name="mailform" class="sendbtn">
+                        <button type="submit" name="mailform" class="sendbtn" onclick="sendconfirm()">Envoyer</button>
+                        <div id="sendconfirm"></div>
                     </form>
                 </div>
 
         </section>
         <div class="space"></div>
     </main>
-
-    <script type="text/javascript">
-
-        var counter = 1;
-
-        setInterval(function () {
-            document.getElementById('radio' + counter).checked = true;
-
-            counter++;
-
-            if (counter > 4) {
-                counter = 1;
-            }
-        }, 50000000);
-    </script>
+    <script src="script.js"></script>
 </body>
-
 </html>

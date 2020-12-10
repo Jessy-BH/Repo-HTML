@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+</head>
+<body>
+    <button onclick="add_nom()">Ajouter nom</button>
+    <button onclick="tirage()">Tirage</button>
+
+    <script>
+
+        var tab = new Array();
+        function add_nom() {
+            tab.push(prompt("Saisir un nom"));
+        }
+        function tirage() {
+            if (tab.length > 0) {
+
+                var rand = Math.floor(Math.random() * tab.length);
+                alert("Le nom gagnant est : " + tab[rand]);
+            }
+            else alert("ajouter des noms");
+        }
+
+
+    </script>
+</body>
+</html>
