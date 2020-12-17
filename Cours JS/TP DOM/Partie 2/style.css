@@ -1,0 +1,20 @@
+
+.panier {
+    border: 2px solid black;
+    height: 800px;
+    margin: 2%;
+}
+
+.liste {
+    height: 200px;
+    border: dotted 2px black;
+    margin: 2%;
+}
+
+li {
+    font-size: 40px;
+}
+
+p {
+    font-size: 50px;
+}

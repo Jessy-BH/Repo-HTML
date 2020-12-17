@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" href="img/icon.png">
     <title>Star Trek</title>
 </head>
 
@@ -19,32 +20,39 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarColor02">
+            <div class="collapse navbar-collapse d-flex align-content-center" id="navbarColor02">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Accueil
-                            <span class="sr-only">(current)</span>
-                        </a>
+                        <a class="nav-link" href="#home">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">LE VAISSEAU ENTREPRISE</a>
+                        <a class="nav-link" href="#ship">LE VAISSEAU ENTREPRISE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">L'EQUIPAGE</a>
+                        <a class="nav-link" href="#team">L'EQUIPAGE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">LE TRIO</a>
+                        <a class="nav-link" href="#trio">LE TRIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dvd">DVD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#links">Liens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#themes">Thèmes</a>
                     </li>
 
                 </ul>
             </div>
         </nav>
 
-        <div class="img-st d-flex justify-content-center">
+        <div id="home" class="img-st d-flex justify-content-center mt-md-4">
             <img src="img/st logo.jpg" alt="Logo star trek">
         </div>
-        <h1 class="blue d-flex justify-content-center">La vision, le message, et les clés d'une série-culte</h1>
-        <blockquote class="citation d-flex justify-content-center purple">
+        <h1 class="white d-flex justify-content-center mt-md-4">La vision, le message, et les clés d'une série-culte</h1>
+        <blockquote class="citation d-flex justify-content-center yellow mt-md-4">
             <p>"Espace, frontière de l'infini
                 vers lequel voyage notre vaisseau spatial.
                 Sa mission: Explorer de nouveaux mondes étranges,
@@ -57,7 +65,7 @@
             <img src="img/under-citation.jpg" alt="">
         </div>
 
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center  mt-md-5">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -86,7 +94,7 @@
             </div>
         </div>
 
-        <div class="cyan d-flex justify-content-center text-justify">
+        <div class="white d-flex justify-content-center text-justify mt-md-5">
             <p class="">Incarnée à l'écran par William Shatner (le Capitaine Kirk), Léonard Nimoy (Mr Spock), et De
                 Forrest
                 Kelley (Dr Leonard Mac Coy), Star Trek est née dans le cerveau d'un scénariste américain, Gene
@@ -113,22 +121,22 @@
             </p>
         </div>
 
-        <section class="equiapge">
-            <article class="vaisseau">
-                <h2 class="blue d-flex justify-content-center">LE VAISSEAU ENTREPRISE</h2>
-                <div class="row">
+        <section class="equiapge mt-md-4">
+            <article class="vaisseau bgwhite">
+                <h2 class="white d-flex justify-content-center" id="ship">LE VAISSEAU ENTREPRISE</h2>
+                <div class="row mt-md-4">
                     <div class="col d-flex justify-content-center"><img src="img/f1.jpg" alt=""></div>
-                    <div class="col d-flex justify-content-center align-items-center cyan">
+                    <div class="col d-flex justify-content-center align-items-center white">
                         <p>Le décor principal de la série est le vaisseau "Entreprise", où se déroulent en vase clos une
                             grande
                             partie des séquences...</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col"><img src="img/f2.jpg" alt=""></div>
-                    <div class="col"><img src="img/f3.jpg" alt=""></div>
-                    <div class="col">
-                        <p class="cyan">Le lieu-clé de l'Entreprise est
+                <div class="row mt-md-4">
+                    <div class="col col-lg-3"><img src="img/f2.jpg" alt=""></div>
+                    <div class="col col-lg-3"><img src="img/f3.jpg" alt=""></div>
+                    <div class="col d-flex align-items-center">
+                        <p class="white">Le lieu-clé de l'Entreprise est
                             la "passerelle", la salle de
                             pilotage du vaisseau.</p>
                     </div>
@@ -136,12 +144,12 @@
 
             </article>
 
-            <article class="equipage">
-                <h2 class="blue d-flex justify-content-center">L'EQUIPAGE</h2>
-                <h3 class="purple d-flex justify-content-center">Mr SCOTTchef-mécanicien</h3>
-                <div class="row">
+            <article class="equipage mt-md-5 bgwhite">
+                <h2 class="white d-flex justify-content-center" id="team">L'EQUIPAGE</h2>
+                <h3 class="black d-flex justify-content-center mt-md-4">Mr SCOTT chef-mécanicien</h3>
+                <div class="row mt-md-4">
                     <div class="col d-flex justify-content-center"><img src="img/scott.jpg" alt=""></div>
-                    <div class="col d-flex justify-content-center align-items-center cyan text-justify">
+                    <div class="col d-flex justify-content-center align-items-center white text-justify">
                         <p>Officier technique, son domaine, c'est la "mécanique". Ecossais bonnace, bourru, bon vivant,
                             un brin
                             primaire, ses idées sont carrées mais viennent du coeur. Sa fierté: le réacteur matière
@@ -154,21 +162,21 @@
                             est au mètre près...</p>
                     </div>
                 </div>
-                <h3 class="purple d-flex justify-content-center">Mlle UHURAofficier des communications</h3>
-                <div class="row">
+                <h3 class="black d-flex justify-content-center mt-md-4">Mlle UHURA officier des communications</h3>
+                <div class="row mt-md-4">
                     <div class="col d-flex justify-content-center"><img src="img/uhu.jpg" alt=""></div>
-                    <div class="col d-flex justify-content-center align-items-center cyan text-justify">
+                    <div class="col d-flex justify-content-center align-items-center white text-justify">
                         <p>L'officier des transmissions est une jeune femme dont le nom signifie "liberté" en swahili.
                             Son regard dégage une douceur infinie. Dans les moments de détentes à bord de l'Entreprise,
                             elle chante des mélodies suaves et nostalgiques, accompagnée à la lyre vulcaine par Mr
                             Spock.</p>
                     </div>
                 </div>
-                <h3 class="purple d-flex justify-content-center">Mr SULU et Mr TCHEKOVofficiers navigateurs</h3>
-                <div class="row">
-                    <div class="col d-flex justify-content-center"><img src="img/sulu.jpg" alt=""></div>
-                    <div class="col d-flex justify-content-center"><img src="img/tche.jpg" alt=""></div>
-                    <div class="col d-flex justify-content-center align-items-center cyan text-justify">
+                <h3 class="black d-flex justify-content-center mt-md-4">Mr SULU et Mr TCHEKOV officiers navigateurs</h3>
+                <div class="row mt-md-4">
+                    <div class="col d-flex justify-content-center col-lg-3"><img src="img/sulu.jpg" alt=""></div>
+                    <div class="col d-flex justify-content-center col-lg-3"><img src="img/tche.jpg" alt=""></div>
+                    <div class="col d-flex justify-content-center align-items-center white text-justify">
                         <p>Cosmopolite, l'équipage de l'Entreprise compte parmi ses officiers-pilotes un Russe pas très
                             malin, et un Japonais facétieux. Tous deux font quasiment partie du décor de la
                             "passerelle".</p>
@@ -176,8 +184,8 @@
                 </div>
             </article>
 
-            <article class="trio cyan">
-                <h2 class="blue d-flex justify-content-center">LE TRIO</h2>
+            <article class="trio white bgwhite">
+                <h2 class="white d-flex justify-content-center mt-md-4" id="trio">LE TRIO</h2>
                 <p>
                     Le trio de Star Trek - Spock, Kirk, et Mac Coy, est le centre de la série.
                     Chacun d'entre eux symbolise l'un de nos trois niveaux fondamentaux:</p>
@@ -189,11 +197,11 @@
                 <p>L'ensemble qu'ils forment reconstitue la personne humaine dans sa globalité.</p>
             </article>
 
-            <article class="spock">
-                <h2 class="blue d-flex justify-content-center">Mr Spock - L'ESPRIT</h2>
-                <div class="row">
+            <article class="spock  bgwhite">
+                <h2 class="white d-flex justify-content-center mt-md-4">Mr Spock - L'ESPRIT</h2>
+                <div class="row mt-md-4">
                     <div class="col d-flex justify-content-center"><img src="img/spock.jpg" alt=""></div>
-                    <div class="col d-flex justify-content-center align-items-center cyan text-justify">
+                    <div class="col d-flex justify-content-center align-items-center white text-justify">
                         <p>Oreilles pointues, visage glabre et allongé, sourcils relevés, expression impénétrable, bien
                             qu'à demi-humain, son apparence physique est celle des Vulcains, dont il a hérité un sens
                             aigu de la logique, ainsi que des facultés avancées de télépathie. Sur l'Entreprise, il est
@@ -203,11 +211,11 @@
                 </div>
             </article>
 
-            <article class="kirk">
-                <h2 class="blue d-flex justify-content-center">Le Capitaine Kirk - L'AME</h2>
-                <div class="row">
+            <article class="kirk bgwhite">
+                <h2 class="white d-flex justify-content-center mt-md-4">Le Capitaine Kirk - L'AME</h2>
+                <div class="row mt-md-4">
                     <div class="col d-flex justify-content-center"><img src="img/kirk.jpg" alt=""></div>
-                    <div class="col d-flex justify-content-center align-items-center cyan text-justify">
+                    <div class="col d-flex justify-content-center align-items-center white text-justify">
                         <p>Héros positif par excellence, il incarne toutes les qualités de la grandeur d'âme humaine.
                             Volontaire, imaginatif, intuitif voire même "inspiré", son attachement à l'Entreprise est
                             quasiment charnel. L'âme, c'est le Capitaine Kirk.</p>
@@ -215,11 +223,11 @@
                 </div>
             </article>
 
-            <article class="coy">
-                <h2 class="blue d-flex justify-content-center">Dr Mac Coy - LE CORPS</h2>
-                <div class="row">
+            <article class="coy bgwhite">
+                <h2 class="white d-flex justify-content-center mt-md-4">Dr Mac Coy - LE CORPS</h2>
+                <div class="row mt-md-4">
                     <div class="col d-flex justify-content-center"><img src="img/kirk.jpg" alt=""></div>
-                    <div class="col d-flex justify-content-center align-items-center cyan text-justify">
+                    <div class="col d-flex justify-content-center align-items-center white text-justify">
                         <p>Le corps, dans Star Trek, c'est Mac Coy, l'Officier médecin de l'Entreprise. Il dispose à ce
                             titre d'un droit de veto sur les décisions du Capitaine si il estime sa santé mentale
                             atteinte. Exactement à l'image du corps qui exprime son "veto" par la maladie
@@ -228,7 +236,7 @@
                             grandes valeurs humaines. Sa voix est celle du bon-sens.</p>
                     </div>
                     <div>
-                        <p class="cyan text-justify">A eux trois, Spock, Kirk et Mac Coy représentent la totalité de la
+                        <p class="white text-justify mt-md-4">A eux trois, Spock, Kirk et Mac Coy représentent la totalité de la
                             personne
                             humaine. Quant à
                             "l'Entreprise", c'est tout simplement la vie, dont le but est bien d'une certaine façon
@@ -241,11 +249,11 @@
                 </div>
             </article>
 
-            <article class="d-flex justify-content-center flex-column">
+            <article class="d-flex justify-content-center flex-column mt-md-4 bgwhite">
                 <div class="d-flex justify-content-center">
                     <img src="img/nova.jpg" alt="">
                 </div>
-                <div class="cyan text-justify">
+                <div class="white text-justify mt-md-4">
                     <p>Pas étonnant dès lors que Star Trek soit étudié en cours de philo dans certaines universités
                         américaines, au point de faire l'objet de thèses...
 
@@ -265,10 +273,10 @@
                         d'années pour que les Organiens évoluent jusqu'à ce stade. Même les Dieux ne sont pas apparus en
                         une nuit. Vous et moi n'avons pas à être embarassés".</p>
                 </div>
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center mt-md-4">
                     <img src="img/mainv.jpg" alt="">
                 </div>
-                <div class="cyan text-justify">
+                <div class="white text-justify mt-md-4">
                     <p>Une des étapes de cette évolution est le développement la télépathie, définie par Spock comme une
                         "fusion d'esprit", permettant de ne faire qu'un avec le monde intérieur de la personne. "Chacun
                         ressent alors ce que l'autre ressent en une osmose para-cérébrale. L'amour et l'acceptation de
@@ -285,10 +293,10 @@
                         connaissance. Cela leur confère sagesse, tolérance, et clairvoyance. Pacifistes, leur principale
                         arme est le verbe.</p>
                 </div>
-                <div class="row">
-                    <div class="col d-flex justify-content-center align-items-center"><img src="img/kirk2.jpg" alt=""
+                <div class="row mt-md-4">
+                    <div class="col d-flex justify-content-center align-items-center mt-md-4"><img src="img/kirk2.jpg" alt=""
                             width="178px" height="138px"></div>
-                    <div class="col d-flex justify-content-center align-items-center cyan text-justify">
+                    <div class="col d-flex justify-content-center align-items-center white text-justify">
                         <p>Mais la race dont il est vraiment fait l'apologie dans Star Trek, c'est la race humaine,
                             représentée dans ce qu'elle a de meilleur par le trio de l'Entreprise. Chacun d'entre eux
                             est chargé de symboliser les trois outils dont dispose l'Homme réaliser sa Trinité: l'esprit
@@ -310,45 +318,117 @@
             </article>
         </section>
 
-        <section class="liensutiles">
+        <section class="liensutiles mt-md-4">
 
-            <article class="dvd">
-                <h2 class="blue d-flex justify-content-center">DVD</h2>
-                <div class="row">
+            <article class="bgwhite">
+                <h2 class="white d-flex justify-content-center" id="dvd">DVD</h2>
+                <div class="row mt-md-4">
                     <div class="col d-flex justify-content-center"><img src="img/dvd1.jpg" alt=""></div>
                     <div class="col d-flex justify-content-center"><img src="img/dvd2.jpg" alt=""></div>
                     <div class="col d-flex justify-content-center"><img src="img/dvd3.jpg" alt=""></div>
                 </div>
-                <div>
-                    <p class="d-flex justify-content-center cyan">"Star Trek, the original series"
+                <div class=" mt-md-4">
+                    <p class="d-flex justify-content-center white">"Star Trek, the original series"
                         La plus philosophique des séries de SF enfin en DVD et en version intégrale,
                         dans 3 boitiers au design très Star Trek !</p>
                 </div>
             </article>
 
-            <article class="liens">
-                <h2 class="blue d-flex justify-content-center">Liens</h2>
+            <article class="bgwhite mt-md-4">
+                <h2 class="white d-flex justify-content-center" id="links">Liens</h2>
                 <ul>
-                    <li class="cyan"><a href="http://www.arbredespossibles.com/blog/index.php?article=99">"Star Trek, aux frontières
+                    <li class="white"><a href="http://www.arbredespossibles.com/blog/index.php?article=99">"Star Trek,
+                            aux frontières
                             de l'infini"</a> un documentaire sur la vision du futur de Star Trek et son influence dans
                         les décennies qui ont suivi, avec des interviews des scientifiques ou artistes que la série a
                         inspiré...</li>
-                    <li class="cyan">Un <a href="http://www.communaute-francophone-star-trek.net/">forum</a> consacré à l'univers de
+                    <li class="white">Un <a href="http://www.communaute-francophone-star-trek.net/">forum</a> consacré à
+                        l'univers de
                         Star Trek</li>
                 </ul>
             </article>
 
-            <article class="themes">
-                <h2 class="blue d-flex justify-content-center">Thèmes associés</h2>
+            <article class="bgwhite mt-md-4">
+                <h2 class="white d-flex justify-content-center" id="themes">Thèmes associés</h2>
                 <div>
-                    <h3 class="blue">L'humain du futur</h3>
-                    <div class="row">
-                        <div class="col"><img src="img/futur.jpg" alt=""></div>
+                    <h3 class="black mt-md-4 d-flex justify-content-center">L'humain du futur</h3>
+                    <div class="row mt-md-4">
+                        <div class="col d-flex justify-content-center align-items-center"><img src="img/futur.jpg" width="43px"
+                                height="50px" alt=""></div>
+                        <div class="col white">
+                            <p>Les étapes vers une civilisation planétaire, et les 24 stades de l'évolution humaine
+                                imaginés par Timothy Leary. Les 12 derniers stades correspondent à notre évolution
+                                potentielle, et à l'éveil de nos facultés latentes...</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="black mt-md-4">Le modèle Ummite de l'Univers</h3>
+                    <div class="row mt-md-4">
+                        <div class="col d-flex justify-content-center align-items-center"><img src="img/modele.jpg" width="43px"
+                                height="50px" alt=""></div>
+                        <div class="col white">
+                            <p>
+                                Les connaissances des extra-terrestres Ummites sur l'Univers, la matière, l'esprit...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="black mt-md-4">Astrobiologie</h3>
+                    <div class="row mt-md-4">
+                        <div class="col d-flex justify-content-center align-items-center"><img src="img/astro.jpg" width="43px"
+                                height="50px" alt=""></div>
+                        <div class="col white">
+                            <p>
+                                Les conditions nécéssaires à l'apparition et au développement de la vie sur une planète
+                                peuvent se résumer en un mot: EQUILIBRE...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="black mt-md-4">Voyage dans le système solaire</h3>
+                    <div class="row mt-md-4">
+                        <div class="col d-flex justify-content-center align-items-center"><img src="img/solaire.jpg" width="43px"
+                                height="50px" alt=""></div>
+                        <div class="col white">
+                            <p>
+                                Un voyage vers des mondes étranges et radicalement différents de la Terre...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="black mt-md-4">UFO Sightings by astronauts</h3>
+                    <div class="row mt-md-4">
+                        <div class="col d-flex justify-content-center align-items-center"><img src="img/ufo.jpg" width="43px" height="50px"
+                                alt=""></div>
+                        <div class="col white">
+                            <p>
+                                Presque tous les astronautes auraient eu l'occasion d'observer des vaisseaux
+                                extra-terrestres lors des vols de la navette ou lors des missions lunaires Apollo. Les
+                                témoignages étonnants d'astronautes américains, comme Neil Amstrong, Edwin Aldrin, Scott
+                                Carpenter, ou Gordon Cooper... (en anglais)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="black mt-md-4">Bibliographie</h3>
+                    <div class="row mt-md-4">
+                        <div class="col d-flex justify-content-center align-items-center"><img src="img/book.jpg" width="43px"
+                                height="50px" alt=""></div>
+                        <div class="col white">
+                            <p>
+                                Quelques livres initiatiques pour répondre à quelques questions essentielles: D'où
+                                venons-nous? Qui sommes-nous? Où allons-nous?...
+                            </p>
+                        </div>
                     </div>
                 </div>
             </article>
         </section>
-
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

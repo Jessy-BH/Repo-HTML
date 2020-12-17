@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>TP DOM</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col" id="left">
+            <div id="maincontent"></div>
+            <button>Hello World</button></br>
+            <input type="text" id="text" placeholder="ici du texte">
+            <button>Custom</button>
+        </div>
+        <div class="col" id="right">
+
+            <button class="col-sm-2 bg-danger">Red</button>
+            <button class="col-sm-2 bg-success">Green</button>
+            <button class="col-sm-2 bg-primary">Blue</button></br>
+            <button class="col-7 mt-2 bg-muted">Toggle</button></br>
+            <button class="col-7 mt-2 bg-warning">Rainbow</button></br><br>
+            <p>Border</p>
+            <input type="range" class="col-5 mt-2" min="0" max="20" step="1">
+
+        </div>
+    </div>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            var button1 = document.querySelector('#right>:nth-child(1)');
+            var button2 = document.querySelector('#right>:nth-child(2)');
+            var button3 = document.querySelector('#right>:nth-child(3)');
+            var button4 = document.querySelector('#right>:nth-child(5)');
+            var button5 = document.querySelector('#right>:nth-child(7)');
+            var buttonHello = document.querySelector('#left>:nth-child(2)');
+            var buttonCustom = document.querySelector('#left>:nth-child(5)');
+            var pxSelector = document.querySelector('#right>input');
+            var bg = document.querySelector('#maincontent');
+
+
+            button1.addEventListener('click', red);
+            button2.addEventListener('click', green);
+            button3.addEventListener('click', blue);
+            button4.addEventListener('click', toggle);
+            button5.addEventListener('click', rainbow);
+            pxSelector.addEventListener('change', border);
+            buttonHello.addEventListener('click', hello);
+            buttonCustom.addEventListener('click', custom);
+
+            function red() {
+
+                bg.style.backgroundColor = "red";
+            }
+
+            function green() {
+
+                bg.style.backgroundColor = "green";
+            }
+
+            function blue() {
+
+                bg.style.backgroundColor = "blue";
+            }
+
+            function toggle() {
+
+                if (bg.style.backgroundColor == "white") {
+
+                    bg.style.backgroundColor = "black";
+
+                } else {
+                    bg.style.backgroundColor = "white";
+                }
+
+            }
+
+            function rainbow() {
+
+                switch (bg.style.backgroundColor) {
+
+                    case "red":
+                        bg.style.backgroundColor = "orange";
+                        break;
+                    case "orange":
+                        bg.style.backgroundColor = "yellow";
+                        break;
+                    case "yellow":
+                        bg.style.backgroundColor = "green";
+                        break;
+                    case "green":
+                        bg.style.backgroundColor = "cyan";
+                        break;
+                    case "cyan":
+                        bg.style.backgroundColor = "blue";
+                        break;
+                    case "blue":
+                        bg.style.backgroundColor = "purple";
+                        break;
+                    case "purple":
+                        bg.style.backgroundColor = "red";
+                        break;
+                    default:
+                        bg.style.backgroundColor = "red";
+                        break;
+                }
+            }
+
+            function border() {
+
+                bg.style.border = "black " + pxSelector.value + "px solid";
+
+            }
+
+            function hello() {
+
+                var helloText = document.createTextNode("Hello world ");
+                bg.appendChild(helloText);
+
+            }
+
+            function custom() {
+
+                var textToAdd = document.querySelector('#text');
+                var content = document.querySelector('#maincontent');
+                content.innerHTML = textToAdd.value;
+
+            }
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>
