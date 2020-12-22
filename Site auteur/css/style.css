@@ -16,6 +16,7 @@ body {
 
 header {
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100%;
@@ -174,7 +175,9 @@ h4 {
     color: white;
     margin-left: 5%;
     margin-right: 5%;
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
 }
 
 .mybio {
@@ -184,9 +187,9 @@ h4 {
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.4);
     font-size: 18px;
+    padding-left: 3%;
+    padding-right: 3%;
 }
-
-
 
 /* ------- Contact ------- */
 
@@ -201,7 +204,9 @@ form {
     color: white;
     margin-left: 5%;
     margin-right: 5%;
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -211,7 +216,6 @@ form {
     justify-content: center;
     align-items: center;
 }
-
 
 .info {
     border: 2px solid #ffd700;

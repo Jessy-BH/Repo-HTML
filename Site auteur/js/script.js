@@ -8,7 +8,7 @@ var counter = 1;
             if (counter > 4) {
                 counter = 1;
             }
-        }, 50000000);
+        }, 50);
 
 function sendconfirm(){
 
